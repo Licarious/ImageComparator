@@ -24,10 +24,8 @@ internal class Program
             foreach (string inputBFile in inputBFiles) {
                 if (Path.GetFileName(inputAFile) == Path.GetFileName(inputBFile)) {
                     Console.WriteLine("Comparing " + Path.GetFileName(inputAFile) + "...");
-                    //create 2 new image files from the input files
-
+                    
                     Image A = Image.FromFile(inputAFile);
-
                     Image B = Image.FromFile(inputBFile);
 
                     Bitmap imageA = new(A);
